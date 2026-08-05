@@ -1,0 +1,120 @@
+/* necessária devido as configuraçao padrão de cada navegador, para evitar conflito é usado zerar tudo (*) como prática de programação */
+/*htttp://loremflickr.com/1600/900/nature.landscape*/
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image:url("https://picsum.photos/1600/900");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-maior {
+    background-color: rgb(151, 151, 179);
+    width: 450px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.input-cidade {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #7c7c7c2b;
+    color: #fff;
+    font-size: 20px;
+    width: calc(100% -100px);
+
+}
+
+.botao {
+    /* Layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Espaçamento e Tamanho */
+    width: 40px;  /* Tamanho fixo para garantir que seja um círculo perfeito */
+    height: 40px;
+    padding: 0;   /* Removido para não distorcer o círculo */
+    margin-left: 8px;
+    
+    /* Estilo */
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(245, 241, 241, 0.17); /* Uso de rgba para melhor controle */
+    cursor: pointer; /* Indica que é clicável */
+    transition: background-color 0.3s ease; /* Suaviza a interação */
+    
+    /* Posicionamento */
+    float: right; 
+}
+
+/* Feedback Visual (Hover) */
+.botao:hover {
+    background-color: rgba(255, 249, 249, 0.3);
+    transform: scale(1.2);
+}
+
+.img-botao {
+    /* Se for uma tag <img> */
+    width: 16px; 
+    height: 16px;
+    object-fit: contain;
+}
+
+.caixa-media{ margin-top: 30px;}
+
+.cidade{ 
+    font-size: 28px;
+    color: #fff;
+}
+
+.temp{ 
+    font-size: 30px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.umidade{
+    color: #fff;
+}
+
+.botao-ia{
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size:  16px;;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    cursor: pointer; /* Indica que é clicável */
+}
+
+.botao-ia:active{
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+.resposta-ia{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+

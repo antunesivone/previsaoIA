@@ -33,4 +33,4 @@ Basta abrir o [index.html](index.html) em um navegador (o reconhecimento de voz 
 
 ## Video Apresentação
 
-<video controls src="Vídeo sem título-04_08_2026, 22_07.mp4" title="Title"></video>
+[![Vídeo Apresentação](https://img.youtube.com/vi/oXv5JoBfmJ8/0.jpg)](https://www.youtube.com/watch?v=oXv5JoBfmJ8)
